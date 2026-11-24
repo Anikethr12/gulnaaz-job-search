@@ -149,7 +149,13 @@ def _fetch_with_retry(keyword, location, start, retries=3, timeout=25):
         except urllib.error.HTTPError as exc:
             if exc.code in (429, 999):
                 if attempt < retries:
-                    time.sleep(_retry_wait(exc, attempt))
+                    wait = _retry_wait(exc, attempt)
+                    print(
+                        f"  [throttled] {keyword} / {location}: HTTP {exc.code}, "
+                        f"waiting {wait:.0f}s then retrying",
+                        flush=True,
+                    )
+                    time.sleep(wait)
                     # Be gentler from now on: widen the global gap (max 5 min).
                     configure(min(MIN_GAP * 2, 300))
                     continue
