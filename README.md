@@ -43,6 +43,49 @@ The dashboard opens in your browser automatically at
 - If the port is already in use, the app says so and tells you to just open
   the dashboard, instead of crashing.
 
+### Windows quick start (copy-paste)
+
+**1. Install Python (once)**
+
+- Go to https://www.python.org/downloads/ and download Python **3.10 or newer**
+- ✅ On the first installer screen, tick **“Add python.exe to PATH”**
+- Click Install
+
+**2. Check it works** (open cmd or PowerShell)
+
+```bat
+python --version
+```
+
+If that opens the Microsoft Store, use this instead: `py --version`
+
+**3. Get the code** — either way works
+
+- Easiest: open https://github.com/Anikethr12/gulnaaz-job-search →
+  **Code ▸ Download ZIP** → right-click the ZIP → **Extract All**
+- Or with Git installed:
+  ```bat
+  git clone https://github.com/Anikethr12/gulnaaz-job-search.git
+  ```
+
+**4. Start it**
+
+```bat
+cd path\to\gulnaaz-job-search
+python app.py
+```
+
+The dashboard opens by itself at **http://127.0.0.1:8765**.
+Press **Ctrl+C** in the terminal to stop.
+
+There is **no `pip install`** step and **nothing else to install** — the bot only
+uses Python's standard library.
+
+**5. Change the search (optional)**
+
+Open `config.json` in Notepad, edit `roles` / `cities`, save, then run
+`python app.py` again.
+
 A search starts immediately, then **one role+city search runs every hour**,
 rotating through the queue: e.g. `HR Executive @ Bengaluru`, then 1 hour later
 `HR Executive @ Davanagere`, then the next role, and so on. With 18 roles ×
