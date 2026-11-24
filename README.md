@@ -51,6 +51,15 @@ The dashboard opens in your browser automatically at
 - ✅ On the first installer screen, tick **“Add python.exe to PATH”**
 - Click Install
 
+Or install it entirely from the terminal (Windows 10/11 ships with `winget`):
+
+```bat
+winget install -e --id Python.Python.3.13 --accept-source-agreements --accept-package-agreements
+```
+
+Any 3.10+ works — `Python.Python.3.12` / `Python.Python.3.14` are also available.
+Close and reopen the terminal afterwards so PATH refreshes.
+
 **2. Check it works** (open cmd or PowerShell)
 
 ```bat
