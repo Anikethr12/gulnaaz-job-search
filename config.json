@@ -1,0 +1,31 @@
+{
+  "roles": [
+    "HR Executive",
+    "HR Operations Executive",
+    "HR Generalist",
+    "HR Coordinator",
+    "HR Associate",
+    "HR Administrator",
+    "HR Analyst",
+    "HR Operations",
+    "Employee Onboarding Executive",
+    "HRIS Executive",
+    "HR Shared Services Executive",
+    "Employee Relations Executive",
+    "Compensation & Benefits Executive",
+    "HR Compliance Executive",
+    "HR MIS Executive",
+    "People Operations Executive",
+    "Junior HR Business Partner",
+    "HRBP"
+  ],
+  "cities": [
+    "Bengaluru, Karnataka, India",
+    "Davanagere, Karnataka, India"
+  ],
+  "pages_per_search": 2,
+  "interval_minutes": 60,
+  "request_gap_seconds": 45,
+  "port": 8765,
+  "max_jobs_shown": 300
+}

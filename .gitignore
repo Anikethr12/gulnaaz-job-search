@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Runtime data: cookies, saved jobs, pid, logs, archived results.
+# Never commit this — data/cookies.txt is a personal LinkedIn session.
+data/
+
+# macOS / Windows noise
+.DS_Store
+Thumbs.db
