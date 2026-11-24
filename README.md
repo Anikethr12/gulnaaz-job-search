@@ -108,7 +108,7 @@ cookies never leave the machine — `data/` is git-ignored.
 ### Publishing it (you, once)
 
 ```bash
-cd /Users/aniketbhatti/gulnaaz-job-search
+cd gulnaaz-job-search
 git init
 git add .
 git commit -m "Gulnaaz Job Search"
