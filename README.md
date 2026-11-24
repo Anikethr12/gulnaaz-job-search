@@ -59,21 +59,33 @@ python --version
 
 If that opens the Microsoft Store, use this instead: `py --version`
 
-**3. Get the code** — either way works
+**3. Get the code** — no Git required
 
-- Easiest: open https://github.com/Anikethr12/gulnaaz-job-search →
-  **Code ▸ Download ZIP** → right-click the ZIP → **Extract All**
-- Or with Git installed:
-  ```bat
-  git clone https://github.com/Anikethr12/gulnaaz-job-search.git
-  ```
+- Open https://github.com/Anikethr12/gulnaaz-job-search
+- Click the green **Code** button → **Download ZIP**
+- Right-click the downloaded `gulnaaz-job-search-main.zip` → **Extract All** → **Extract**
+- It extracts to `C:\Users\<you>\Downloads\gulnaaz-job-search-main`
+
+(If you *do* have Git, `git clone https://github.com/Anikethr12/gulnaaz-job-search.git`
+works the same way.)
 
 **4. Start it**
 
+The easy way to open a terminal in the right folder: open that folder in File
+Explorer, click the address bar, type `cmd`, press Enter. Then:
+
 ```bat
-cd path\to\gulnaaz-job-search
 python app.py
 ```
+
+Or from anywhere:
+
+```bat
+cd %USERPROFILE%\Downloads\gulnaaz-job-search-main
+python app.py
+```
+
+PowerShell uses `cd $env:USERPROFILE\Downloads\gulnaaz-job-search-main` instead.
 
 The dashboard opens by itself at **http://127.0.0.1:8765**.
 Press **Ctrl+C** in the terminal to stop.
